@@ -2,9 +2,11 @@
 
 
 import userRoutes from './user'
+import productRoutes from './product'
 
 const router = {
-    userRoutes
+    userRoutes,
+    productRoutes
 }
 
 export default router
