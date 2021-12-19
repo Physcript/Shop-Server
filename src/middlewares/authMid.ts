@@ -9,7 +9,7 @@ const authMid = async (req: Request,res: Response,next:NextFunction) => {
     next()
 
 }
-const chk_token = async (token: string, res: Response) => {
+export const chk_token = async (token: string, res: Response) => {
     jwt.verify(token,`${config.TOKEN.LOGIN}`, (err,decode) => {
         if(err) {
             res.locals.user = false

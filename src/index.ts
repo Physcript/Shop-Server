@@ -40,6 +40,7 @@ app.use((req,res,next) => {
 // route
 app.use('/api',router.userRoutes)
 app.use('/api',router.productRoutes)
+app.use('/api',router.commentRoutes)
 
 // error
 app.use((req,res) => {
