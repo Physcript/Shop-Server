@@ -41,6 +41,7 @@ app.use((req,res,next) => {
 app.use('/api',router.userRoutes)
 app.use('/api',router.productRoutes)
 app.use('/api',router.commentRoutes)
+app.use('/api',router.orderRoutes)
 
 // error
 app.use((req,res) => {
@@ -54,5 +55,3 @@ mongoose.connect(`${config.MONGO.URL}`, config.MONGO.OPTIONS)
     .catch((err) => console.log(`NETWORK ERROR ${ err }`))
 
 httpServer.listen(config.SERVER.PORT, () => console.log(`SERVER: ${config.SERVER.HOST}:${config.SERVER.PORT}`))
-
-
