@@ -38,3 +38,9 @@ export const authCon = (req:Request,res: Response) => {
     return
 }
 
+
+export const loginAdminCon = (req: Request, res: Response) => {
+  res.status(200).json({
+      data: 'Login'
+  })
+}

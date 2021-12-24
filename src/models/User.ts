@@ -12,6 +12,10 @@ const userSchema = new mongoose.Schema({
     },
     password: String,
     loginToken: String,
+    role: {
+      type: String,
+      default: 'CUSTOMER'
+    },
     verified: {
         type: String,
         default: false
