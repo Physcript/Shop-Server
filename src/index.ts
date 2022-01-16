@@ -24,7 +24,7 @@ app.use(cookieParser())
 
 // corsPolicy
 app.use((req,res,next) => {
-    res.setHeader('Access-Control-Allow-Origin','https://condescending-dubinsky-a9f266.netlify.app/')
+    res.setHeader('Access-Control-Allow-Origin','https://condescending-dubinsky-a9f266.netlify.app')
     res.setHeader('Access-Control-Allow-Methods', 'PUT,PATCH,DELETE,GET,POST,OPTIONS')
     res.setHeader('Access-Control-Allow-headers', 'X-Requested-With,Content-Type')
     res.setHeader('Access-Control-Allow-credentials', 'true')
