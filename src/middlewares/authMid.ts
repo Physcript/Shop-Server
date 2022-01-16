@@ -4,6 +4,8 @@ import config from '../config'
 import {IUser} from "../interfaces/user";
 
 const authMid = async (req: Request,res: Response,next:NextFunction) => {
+
+    console.log(req.cookies)
     const token = req.cookies.token
     console.log(token)
     await chk_token(token,res)
