@@ -4,10 +4,13 @@ import config from '../config'
 import {IUser} from "../interfaces/user";
 
 const authMid = async (req: Request,res: Response,next:NextFunction) => {  
-    const token: string = req.headers.token || ''
-    console.log(token)
-    await chk_token(token,res)
-    next()
+    // const token = req.headers.token || ''
+    // console.log(token)
+    // await chk_token(token,res)
+    // next()
+
+    console.log(req.headers.token)
+    console.log(typeof req.headers.token)
 
 }
 export const chk_token = async (token: string, res: Response) => {
